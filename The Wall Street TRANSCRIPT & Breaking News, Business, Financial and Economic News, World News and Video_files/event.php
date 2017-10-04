@@ -1,0 +1,1 @@
+(function() { var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = 'https://analytics.twitter.com/i/adsct?txn_id=l5j77&p_id=Twitter&tw_sale_amount=0&tw_order_quantity=0'; var h = document.getElementsByTagName('head')[0]; h.appendChild(s); })();

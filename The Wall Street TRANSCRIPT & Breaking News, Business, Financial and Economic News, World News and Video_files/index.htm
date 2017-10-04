@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<script src="index_data/Enabler_01_128.js" type="text/javascript"></script>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="index_data/main.css" type="text/css">
+<script src="index_data/jquery.js"></script>
+
+<style>body { position: relative; margin-left: -0px !important; margin-top: -0px !important; }</style></head>
+
+<body>
+<div id="container">
+  <div id="collapsed" style="display: block;">
+    <button id="expand_btn" style="display: block;"></button>
+
+
+
+  </div>
+
+  <div id="expanded" style="display: none;">
+    <div id="p_img2"></div>
+    <div id="p_img1"></div>
+    <div id="p_whiteBox"></div>
+    <div id="p_copy2"></div>
+    <div id="p_copy1"></div>
+
+    <div id="p_graph"></div>
+
+    <div id="p_pulse">
+      <div id="p_elipse"></div>
+      <div id="p_dot"></div>
+    </div>
+    <div id="p_flag"></div>
+    <div id="p_logo"></div>
+    <div id="close_x"></div>
+
+    <button id="exit_btn"></button>
+    <button id="close_btn"></button>
+  </div>
+    
+  </div>
+
+  
+  
+
+<script language="javascript">
+    //Initialize Enabler
+    if (Enabler.isInitialized()) {
+        Enabler.setExpandingPixelOffsets(
+          0, // left offset of expanded ad
+          0, // top offset of expanded ad
+          970, // expanded width of ad
+          250); // expanded height of ad
+        init();
+    } else {
+        Enabler.addEventListener(studio.events.StudioEvent.INIT, init);
+    }
+
+    function init(){
+        if(Enabler.isPageLoaded()){
+            politeInit();
+        }else{
+            Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED, politeInit);
+        }
+    }
+    function politeInit(){
+        initAd();
+
+    }
+</script> 
+<script src="index_data/TweenMax.js"></script> 
+<script src="index_data/main.js" type="text/javascript"></script>
+
+
+</body></html>

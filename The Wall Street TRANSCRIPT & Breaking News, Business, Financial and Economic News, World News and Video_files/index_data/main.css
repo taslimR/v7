@@ -1,0 +1,80 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body, body * {
+	vertical-align:baseline;
+	border:0 none;
+	outline:0;
+	padding:0;
+	margin:0;
+	background-color:transparent;
+}
+
+#container{
+	position: absolute;
+	width: 970px;
+	/*height: 100%;*/
+	top: 0px;
+	left: 0px;
+	margin: auto;
+	z-index: 0;
+}
+
+#collapsed {
+	position: absolute;
+	width:970px;
+	height:1px;
+	background-image: url('white_collapse.png');
+	background-size: cover;
+	z-index:100;
+	display:block;
+	border: 0;
+	position: relative;
+	overflow: hidden;
+	display: none;
+}
+#expanded{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:970px;
+	height:250px;
+	background-image: url('fff.png');
+	z-index:200;
+	display:none;
+	border: 0;
+	position: relative;
+	overflow: hidden;
+	/*display: block;*/
+}
+#expand_btn{
+	position: absolute;
+	top: 45px;
+	right: 540px;
+	width: 100px;
+	height: 30px;
+
+	/* background-image: url('open.png'); */
+	display: none;
+	cursor: pointer;
+	z-index: 300;
+}
+#close_btn{
+	position:absolute;
+	top: 1px;
+	right: 1px;
+	width:30px;
+	height:30px;
+	/*background-image:url('close.png');*/
+	cursor:pointer;
+	z-index:300;
+}
+#exit_btn{
+	position:absolute;
+	top:0px;
+	left:0px;
+	width:100%;
+	height:100%;
+	cursor:pointer;
+	z-index:300;
+}

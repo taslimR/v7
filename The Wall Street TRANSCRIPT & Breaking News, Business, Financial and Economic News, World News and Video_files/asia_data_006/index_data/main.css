@@ -1,0 +1,133 @@
+
+@charset "UTF-8";
+/* CSS Document */
+
+/* Default style, feel free to remove if not needed. */
+body{
+	vertical-align: baseline;
+	border: 0;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+}
+
+
+/* Div layer for the entire banner. */
+#container_dc {
+	position: absolute;
+	width: 298px;
+	height: 395px;
+	border:1px solid #ccc;
+	border-top: 4px solid #ccc;
+	top: 0px;
+	left: 0px;
+	margin: auto;
+	font-family: Arial,Helvetica Neue,Helvetica,sans-serif;
+}
+
+/* content */
+
+#content_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	background-color: #f5f7f9;
+	overflow:hidden;
+	
+}
+
+#header_wrapper {
+	position: absolute;
+	height: 35px;
+	width: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	font-size: 11px;
+	border-bottom: 1px dotted #ccc;
+}
+
+#header {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translate(0,-50%);
+	-webkit-transform: translate(0,-50%);
+}
+
+#feed_wrapper {
+	position: absolute;
+	top: 35px;
+	left: 50%;
+	transform: translate(-50%,0);
+	-webkit-transform: translate(-50%,0);
+	/*background-color: #333;*/
+	width: 290px;
+	height: 314px;
+	overflow: auto;
+
+}
+
+.feed_class {
+	cursor: pointer;
+	border-bottom: 1px dotted #ccc;
+	font-size: 12px;
+	color: #000;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+#footer_wrapper {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 50px;
+	/*background-color: #333;*/
+}
+
+#logo {
+	position: absolute;
+	right: 5px;
+	top: 50%;
+	transform: translate(0,-50%);
+	-webkit-transform: translate(0,-50%);
+	width: 152px;
+	height: 33px;
+	background-image: url(logo.jpg);
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+
+#more {
+	position: absolute;
+	left: 5px;
+	top: 7px;
+	font-size: 11px;
+	cursor: pointer;
+	z-index: 30;
+	font-weight: bold;
+}
+
+
+
+/* Invisible button for background clickthrough. */
+#background_exit_dc {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0px;
+	left: 0px;
+	cursor: pointer;
+	z-index: 20;
+	background-color: transparent;
+}
+
+
+
+
+:focus {outline:none;}
+::-moz-focus-inner {border:0;}
+
